@@ -1,0 +1,348 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+body {
+    background-color: #fafafa;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* BANNER CONTAINER */
+.banner-container,
+.form-container {
+    flex: 1 1 0;
+    width: 50%;
+}
+
+.banner-container {
+    text-align: right;
+}
+
+.banner-container img {
+    width: 100%;
+    margin-right: 20px;
+    margin-top: 50px;
+    max-width: 700px;
+}
+
+/* FORM CONTAINER */
+.form-container {
+    text-align: center;
+}
+
+/* FORM-BOX */
+.form-box {
+   background-color: #fff; 
+   border: 1px solid #dbdbdb;
+   width: 400px;
+
+   margin-top: 20px;
+}
+
+.form-box .logo-planet {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 15px;
+}
+
+.login-form {
+    margin-top: 30px;
+}
+
+.login-form input {
+    display: block;
+    font-size: 12px;
+    margin: 15px auto;
+    width: 300px;
+    height: 45px;
+    padding: 12px 9px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+.login-form input[type="submit"] {
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    height: 40px;
+    padding: 0px;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #ffae00;
+}
+
+/* FORGOT PASSWORD */
+.forgot-pass {
+    margin: 30px;
+    font-size: 14px;
+}
+
+.forgot-pass a {
+    text-decoration: none;
+    color: #3232b8;
+}
+
+/* SEPARATOR */
+.separator {
+    position: relative;
+}
+
+.line {
+    border-top: 1px solid #dbdbdb;
+    width: 300px;
+    margin: 25px auto 35px;
+}
+
+.separator span {
+    position: absolute;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #aaa;
+    top: -10px;
+    width: 50px;
+    margin-left: -25px;
+    font-size: 14px;
+}
+
+/* OTHER LINKS */
+.access {
+    margin-bottom: 30px;
+}
+
+.access a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #dbdbdb;
+    color: #28289e;
+    width: 300px;
+    height: 45px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.access img {
+    width: 30px; 
+    height: 30px;
+    margin-right: 20px;          
+}
+
+/* REGISTER */
+.register-container {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    width: 400px;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+.register-container p {
+    font-size: 14px;
+    color: #232323;
+}
+
+.register-container a {
+    color: #ee774b;
+    margin-left: 15px;
+}
+
+.register-container a:hover {
+    color: #eb1212;  
+}
+
+/* GET APP */
+.get-app-container {
+    text-align: center;
+    width: 400px;
+}
+
+.get-app-container p {
+    margin: 20px 0;
+}
+
+.get-app-container a {
+    text-decoration: none;
+}
+
+.get-app-container img {
+    width: 163px;
+    height: 48px;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgba(255, 102, 0, 0.2);
+    font-family: 'Helvetica';
+    padding: 3rem 0;
+    margin-top: 3rem;
+}
+
+footer .nav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .nav-container .box-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-footer {
+    flex: 1 1 0;
+    width: 50%;
+    text-align: center;
+}
+
+.nav-footer ul {
+    padding: 0;
+}
+
+.nav-footer li {
+    list-style: none;
+    line-height: 30px;
+}
+
+.nav-footer li a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+}
+
+.nav-footer li a:hover {
+    color: #000;
+}
+
+.nav-footer .about,
+.nav-footer .service,
+.nav-footer .terms,
+.nav-footer  .network{
+    color: #000;
+    font-weight: bold;
+}
+
+.nav-footer .fab {
+    font-size: 20px;
+}
+
+.nav-footer .fa-whatsapp {
+    font-size: 24px;
+}
+
+.nav-footer .fa-facebook {
+    font-size: 21px;
+}
+
+.nav-footer .fa-instagram {
+    font-size: 22px;
+}
+
+/* COPYRIGHT */
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 2rem;
+}
+
+/* RESPONSIVE */
+/* MOBILE */
+@media (max-width: 480px) {
+    body { 
+        background-color: #fff;
+    }
+
+    .banner-container {
+        display: none;
+    }
+
+    .main-container,
+    .form-container {
+        margin-top: 0;
+    }
+
+    .form-box {
+        margin-top: 0;
+    }
+
+    .form-container,
+    .form-box,
+    .register-container,
+    .get-app-container {
+        width: 100%;
+    }
+
+    .forgot-pass {
+        margin: 20px;
+    }
+
+    .access {
+        margin-bottom: 0;
+    }
+
+    .register-container {
+        margin-top: 0;
+    }
+
+    footer {
+        padding: 2rem 0;
+    }
+
+    footer nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-footer li {
+        line-height: 1.5rem;
+    }
+
+    .nav-footer li a {
+        font-size: 0.6rem;
+    }
+
+    .nav-footer .about,
+    .nav-footer .service,
+    .nav-footer .terms,
+    .nav-footer  .network {
+        font-size: 0.6rem;
+    }
+    
+    .nav-footer .fab {
+        font-size: 15px;
+    }
+    
+    .nav-footer .fa-whatsapp {
+        font-size: 18px;
+    }
+    
+    .nav-footer .fa-facebook {
+        font-size: 18px;
+    }
+    
+    .nav-footer .fa-instagram {
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 0.5rem;
+        padding-top: 0;
+    }
+}
+
+/* TABLET:  */
+

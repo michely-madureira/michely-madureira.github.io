@@ -1,0 +1,364 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth; /* Usado para que a âncora do link role suavemente para a seção desejada da página */
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.navbar-container {
+    background-color: #071441;
+    padding: 1.5rem 2.5rem;
+}
+
+.nav-box {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-box p {
+    color: #78e5c5;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Logomarca */
+.logo {
+    padding-right: 1rem;
+    margin: auto 0;
+}
+
+.logo img {
+    height: 80px;
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-left: 1px solid #58ff75;
+    padding-left: 1rem;
+}
+
+#brand {
+    color: #58ff75;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+#slogan {
+    color: #89ffd9;
+    font-size: 0.65rem;
+}
+
+/* Barra de navegação */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.nav-links li a,
+.dropbtn a {
+    display: block;
+    color: #58ff75;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.nav-links li a:hover, 
+.dropdown:hover .dropbtn {
+    background-color: #286b57;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #022c57;
+    min-width: 60px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;  
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Conteúdo principal */
+.container {
+    display: flex;
+    gap: 3rem;
+    padding: 2.5rem 2rem 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.post-container {
+    flex: 3 1 0;
+}
+
+.post {
+    margin-bottom: 2.5rem;
+}
+
+.post img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.title,
+.description,
+.author,
+.publication {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.title a{
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.title a:hover {
+    color: #1d3af7;
+}
+
+.read a {
+    text-decoration: underline;
+    color: #1d3af7;
+}
+
+.read a:hover {
+    color: #c40000;
+}
+
+.description {
+    line-height: 1.5rem;
+}
+.author {
+    font-weight: bold;
+    color: #333;
+}
+
+.publication {
+    color: #666;
+}
+
+/* Barra lateral */
+.sidebar {
+    flex: 1 0 0;
+}
+
+.search-box,
+.tags,
+.recent-post {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed #888;
+}
+
+.search-box h4,
+.tags h4 ,
+.recent-post h4 {
+    font-size: 1.5rem;
+    color: #111;
+    margin-bottom: 1rem;
+    text-indent: 0.5rem;
+}
+
+/* Busca */
+.search-box form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #083f77;
+    padding-left: 4px;
+    border-radius: 7px;
+    min-width: 300px;
+    height: 36px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+form .fa-search {
+    padding: 0 6px;
+    color: #fff;
+}
+
+.search-box input {
+    background-color: transparent;
+    padding-left: 1rem 2rem;
+    font-size: 0.9rem;
+    border: none;
+    height: 36px;
+    width: 200px; 
+    color: #fff;
+}
+
+.search-box input::placeholder {
+    color: #fff;
+}
+
+.search-box input:focus {
+    border: none;
+    outline: 0;
+}
+
+.search-btn {
+    border: transparent;
+    height: 36px;
+    width: 70px;
+    border-radius: 0 7px 7px 0;
+    font-weight: bold;
+    background-color: #040368;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #0a0896;
+}
+
+/* Tags */
+.tags-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tags-container a {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #66222222;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 410;
+    color: #111;
+}
+
+.tags-container a:hover {
+    color: #1d3af7;
+}
+
+/* Posts Recentes */
+.dynamic-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.dynamic-list {
+    padding-right: 0.5rem;
+}
+
+.dynamic-list img {
+    width: 100px;
+    height: 80px;
+}
+
+.dynamic-list p {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.dynamic-list p a:hover {
+    color: #1d3af7;
+}
+
+.dynamic-list p a {
+    color: #222;
+    font-weight: bold;
+}
+
+.dynamic-list .publication {
+    font-size: 0.7rem;
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    background-color: #071441;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.about,
+.contact,
+.copyright {
+    padding: 1.5rem 0 1rem 2rem;
+}
+
+.about h3,
+.contact h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #58ff75;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    border-bottom: 1px solid #58ff75;
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+.about p,
+address,
+.contact p {
+    font-size: 0.8rem;
+    color: #89ffd9;
+    line-height: 1.2rem;
+}
+
+address a {
+    color: #69f180;
+}
+
+address a:hover {
+    color: #89ffd9;
+}
+
+.copyright {
+    color: #58ff75;
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+}
+
+/* RESPONSIVO */
+
+

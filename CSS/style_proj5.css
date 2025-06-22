@@ -1,0 +1,634 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* Navbar */
+.navbar-container {
+    width: 100%;
+    height: 150px;
+    background-color: #ffdede;
+    padding: 0 2rem;
+}
+
+nav {
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+    margin-top: 15px;
+    cursor: pointer;
+    position: absolute;
+    left: 25px;
+}
+
+.navbar-items {
+    position: absolute;
+    right: 0;
+    height: 150px;
+    line-height: 150px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li {
+    display: inline-block;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+.navbar-items a {
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover {
+    color: #d63434;  /*mudar*/  
+}
+
+#right-btn {
+    background-color: #4b6bb6;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #fff;
+    
+}
+
+.navbar-items #right-btn:hover {
+    background-color: #ff9a9a;
+    color: #444;
+}
+
+/* Main banner */
+.main-banner {
+    background-image: url(../img/cremecai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 12rem 0;
+}
+
+.main-banner h1,
+.main-banner p {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 2px 3px #000;
+    font-family: 'Comfortaa';
+}
+
+.main-banner h1 {
+    font-size: 100px;
+    
+}
+
+.main-banner p {
+    font-size: 30px;
+}
+
+/* Service container */
+.service-container {
+    padding-top: 5rem;
+}
+
+.service-container .service-title {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 10rem;
+}
+
+.service-container .service-title h2 {
+    font-size: 30px;
+}
+
+.service-container ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.service-container li {
+    flex: 1 1 200px;
+    list-style-type: none;
+    text-align: center;
+    padding: 30px;
+}
+
+.fas {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.fa-shield-alt,
+.fa-award,
+.fa-user-graduate,
+.fa-microchip {
+    color: #4b6bb6; 
+}
+
+.service-container h3 {
+    margin-bottom: 15px;
+}
+
+.service-container p {
+    line-height: 25px;
+}
+
+/* Treatments container */
+.treatments-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.treatments-container h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.treatments-container p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Galery container */
+.galery-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.galery-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 500px;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+/* Box description */
+.box-description {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    height: 350px;
+    background: #faadad;
+    border-radius: 5px;
+    margin: 0 15px;
+    padding: 15px;
+    position: relative;
+    z-index: 0;
+    box-shadow: 0px 0px 10px #444;
+}
+
+.stetic-face,
+.stetic-body,
+.stetic-male,
+.stetic-hair {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    z-index: 1;
+    margin: -50px auto 0;
+    box-shadow: 2px 2px 10px #444;
+}
+
+.box-description h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.box-description p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Sale container */
+.sale-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.sale-container h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.sale-container p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Promotion */
+.promotion-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.promotion {
+    flex: 1 1 0;
+    max-width: 275px;
+}
+
+.promotion ul {
+    padding: 0;
+}
+
+.promotion li {
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    background-color: #e8e9f1;
+    color: #000;
+}
+
+.promotion .sale {
+    width: 275px;
+    height: 275px;
+    line-height: 150px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #4b6bb6;
+    color: #fff;
+    margin: 0 auto -150px;
+}
+
+.promotion .sale-name {
+    background-color: #202b70;
+    color: #ddd;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    height: 60px;
+    border: 6px dotted #202b70;
+}
+
+.promotion .sale-btn {
+    background-color: #d31616;
+    color: #fff;
+    font-size: 25px;
+    height: 60px;
+    cursor: pointer;
+    border: 6px dotted #d31616;
+}
+
+/* Hover sale-btn */
+.promotion .sale-btn:hover {
+    background-color: #f10808;
+    border: none;
+}
+
+/* Animação recommeded */
+.promotion .recommeded-1 {
+    animation: alert_a 3s linear -3s infinite normal;    
+}
+
+@keyframes alert_a {
+    0% {border: 6px dotted #ff00d4;}
+    25% {border: 6px dotted #202b70;}
+    50% {border: 6px dotted #ff00d4;}
+    75% {border: 6px dotted #202b70;}
+    100% {border: 6px dotted #ff00d4;}
+}
+
+.promotion .recommeded-2 {
+    animation: alert_b 3s linear -3s infinite alternate forwards;
+}
+
+@keyframes alert_b {
+    0% {border: 6px dotted #00dd00;}
+    25% {border: 6px dotted #d31616;}
+    50% {border: 6px dotted #00dd00;}
+    75% {border: 6px dotted #d31616;}
+    100% {border: 6px dotted #00dd00;}       
+}
+
+/* Footer */
+footer {
+    background-color: #ff9a9a;
+    padding: 50px 0;
+}
+
+/* Flex-box */
+.flex-box {
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.address,
+.social-media,
+.contact {
+    flex: 1 1 200px;
+    width: 50%;
+}
+
+.footer-container .flex-box h2 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.footer-container .flex-box p {
+    font-size: 15px;
+    line-height: 25px;
+}
+/* Address */
+.address .add {
+    font-size: 23px;
+}
+
+.footer-container .flex-box {
+    width: 100%;
+}
+
+/* Media */
+.flex-box .media ul {
+    display: flex;
+}
+
+.media li {
+    flex: 1 1 0;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.fab {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+/* Formulário */
+.contact-form input,
+.contact-form textarea {
+    width: 180px;
+    padding: 5px 8px;
+    font-size: 12px;
+    background-color: #ff9a9a;
+    border: none;
+    border-bottom: 1px solid #333;
+    margin: 0 5px 10px;
+}
+
+/* Alterar a cor do placeholder */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #333;
+}
+
+.contact-form textarea {
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    height: 100px;
+    border: 1px solid #444;
+    resize: none;
+}
+
+.contact-form input[type="submit"]{
+    display: block;
+    margin: 0 auto; 
+    background-color: #ffccd2;
+    border: transparent;
+    padding: 10px 20px;
+    width: 150px;
+}
+
+.contact-form input[type="submit"]:hover{
+    background-color: #8daff5;
+}
+
+/* Direitos reservados */
+.rights-reserved {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.rights-reserved p {
+    padding-right: 4rem;
+}
+/* Responsive */
+/* Laptop de até 1100px */
+@media (max-width: 1100px) {}
+    
+
+/* Tablet de até 900px */
+@media (max-width: 900px) {
+    .logo {
+        width: 150px;
+        margin-top: 30px;
+    }
+
+    .navbar-items li {
+        margin-left: 18px;
+    }
+
+    .navbar-items a {
+        font-size: 16px;
+    }
+
+    .main-banner h1 {
+        font-size: 80px;
+    }
+
+    .service-container .service-title h2 {
+        font-size: 25px;
+    }
+
+    .promotion ul {
+        padding: 20px;
+    }
+}
+
+/* Mobile de até 576px */
+@media (max-width: 576px){
+    .navbar-container{
+        height: 75px;
+        padding: 0 5px;
+        width: 123%;
+    }
+
+    .logo {
+        width: 100px;
+        margin-top: 8px;
+    }
+
+    .navbar-items {
+        height: 75px;
+        line-height: 75px;
+        
+    }
+
+    .navbar-items li {
+        margin-left: 20px;
+    }
+
+    .navbar-items a {
+        font-size: 12px;
+    }
+
+    #right-btn {
+        padding: 10px 15px;
+        margin-right: 15px;
+    }
+
+    .main-banner {
+        padding: 6rem;
+    }
+    
+    .main-banner {
+        width: 154%;
+    }
+
+    .main-banner h1 {
+        font-size: 50px;
+    }
+
+    .main-banner p {
+        font-size: 19px;
+    }
+
+    .service-container {
+        padding-top: 2rem;
+
+    }
+
+    .service-title {
+        margin: 20px;
+        padding: 0 2rem;
+    }
+
+    .service-container .service-title h2 {
+        font-size: 20px;
+        padding: ;
+    }
+
+    .service-container ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .fas {
+        font-size: 40px;
+    }
+
+    .service-container h3 {
+        font-size: 18px;
+    }
+
+    .service-container p {
+        font-size:15px;
+    }
+
+    .treatments-container h2 {
+        font-size: 22px;
+    }
+
+    .treatments-container p {
+        font-size: 18px;
+    }
+
+    .galery-box {
+        display: flex;
+        flex: 1 1 400px;
+    }
+
+    .box-description {
+        width: 350px;
+        height: 350px;
+        padding: 15px 38px 25px 25px;
+    }
+
+    .stetic-face,
+    .stetic-body,
+    .stetic-male {
+        width: 220px;
+        height: 220px;
+        margin: 55px 20px 10px -30px;
+    }
+
+    .box-description p {
+        font-size: 15px;
+    }
+
+    .sale-container {
+        padding: 2rem;
+    }
+    .sale-container h2 {
+        font-size: 22px;
+    }
+
+    .sale-container p {
+        font-size: 18px;
+    }
+
+    .promotion-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto 0;
+    }
+
+    .promotion ul {
+        padding: 2px;
+    }
+    
+    footer {
+        width: 152%;
+    }
+
+    .footer-container .flex-box h2 {
+        font-size: 15px;
+        margin: 8px 0;
+    }
+    
+    .footer-container .flex-box p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .rights-reserved p {
+        padding-right: 1.5rem;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hilux Toyota</title>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../img/toyota-favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../CSS/style_proj4.css">
+    <!-- Script -->
+    <script src="../js/script-projeto4.js" defer></script>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li class="logo">
+            <a href="#">
+              <img src="../img/logo-toyota.svg" alt="Toyota" />
+            </a>
+          </li>
+          <li>
+            <a href="#">Modelo</a>
+          </li>
+          <li>
+            <a href="#">Compra</a>
+          </li>
+          <li>
+            <a href="#">Meu Toyota</a>
+          </li>
+          <li>
+            <a href="#">Mundo Toyota</a>
+          </li>
+          <li>
+            <a href="#">Contato</a>
+          </li>
+          <li id="search-box">
+            <i class="fa fa-search"></i>
+            <input type="search" name="search" placeholder="Pesquisar..." />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+      <section class="container-main">
+        <div class="banner-main">
+          <div class="banner-inner">
+            <h1>Hilux</h1>
+            <p>Ande com gigantes!</p>
+          </div>
+          <div class="banner-inner">
+            <p id="slogan">Encare os desafios com a gigante mais bruta da categoria!</p>
+          </div>
+        </div>
+        <div id="grid-line"></div>
+        <div class="banner-actual">
+          <h2 class="title">Hilux GR-Sport 2024</h2>
+          <div class="banner-dynamic">
+            <div class="box-actual-inner">
+              <p id="slogan">A nova Hilux possui design robusto e resistente.</p>
+              <p id="slogan">Projetada para enfrentar qualquer desafio.
+              </p>
+            </div>
+            <div class="box-actual-inner">
+              <p id="ident">Preço Inicial</p>
+              <p id="price">R$ 372.890,00</p>
+              <p id="desc">
+                *Preço público sugerido em reais, com frete incluso, válido para
+                todo território nacional. O preço público sugerido é um valor
+                referência e, por força de Lei, cada Concessionária tem a
+                liberdade de praticar o seu preço específico. Consulte a
+                concessionária de sua preferência para mais informações.
+              </p>
+            </div>
+            <div class="box-actual-inner btns">
+              <button id="btn_1">Simular Financiamento</button>
+              <button id="btn_2">Agende um teste drive</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Versões -->
+      <section class="version">
+        <div class="version-inner">
+          <p>Versão:</p>
+          <h2>Toyota Hilux GR-SPORT 2024 </h2>
+        </div>
+        <div class="custom-bottom">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+          </svg>
+        </div>          
+        <div class="main-version">
+          <div class="main-dinamic">
+            <div class="main-inner">
+              <div class="main-list">
+                <img
+                  id="product-image"
+                  src="../img/gr_sport_black.png"
+                  alt="Hilux STD Power Pack"
+                />
+                <div id="image-picker">
+                  <ul>
+                    <li id="black">
+                      <span class="color selected"></span>
+                      <span class="description">Perto Atittude</span>
+                    </li>
+                    <li id="gray">
+                      <span class="color"></span>
+                      <span class="description">Cinza Granito</span>
+                    </li>
+                    <li id="red">
+                      <span class="color"></span>
+                      <span class="description">Vermelho Volcano</span>
+                    </li>
+                    <li id="white">
+                      <span class="color"></span>
+                      <span class="description">Branco Lunar</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="main-list details">
+                <p id="details-title">Detalhes Exclusivos</p>
+                <ul id="details-desc">
+                  <li>Design esportivo com o conceito de Wide Tread, Faróis e lanternas de LED.</li>
+                  <li>Roda de liga leve 17".</li>
+                  <li>Grade e para-choque dianteiros com design GR e Sport Bar.</li>
+                  <li>Acabamento interno na cor preta e revestimento dos bancos em couro, suede e material sintético, com costuras em vermelho.</li>
+                  <li>Santontônio e capota marítima.</li>
+                </ul>
+                <button class="btn_buy">Comprar</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Diferencial -->
+      <section class="differential">
+        <div class="differential-inner">
+          <p>Diferenciais:</p>
+          <h2>Toyota Hilux GR-SPORT 2024 </h2>
+        </div> 
+        <!-- Robustez -->
+        <div class="banner-robust">
+          <div class="robust-dinamic">
+            <div class="robust-vertical">
+              <p id="vertical">Robustez e Reistência</p>
+            </div>
+          </div>
+          <div class="robust-dinamic">
+            <div class="robust-inner">
+              <div class="robust-list">
+                <p id="slogan">Desenhada para todos os tipos de terrenos.</p>
+              </div>
+              <div class="robust-list">
+                <p id="desc">
+                  A Hilux combina força, resistência, qualidade incomparável.
+                Atributos exclusivos que garantem uma experiência duradoura e
+                confiável.
+                </p>
+              </div>
+           </div>
+          </div>
+        </div>
+        <!-- Motores -->
+          <div class="banner-engine">
+            <div class="engine-dinamic">
+              <div class="engine-vertical">
+                <p id="vertical">Motores Potentes</p>
+              </div>
+            </div>
+            <div class="engine-dinamic">
+              <div class="engine-inner">
+                <div class="engine-list">
+                  <p id="slogan">Potência e desempenho incomparável, em cada quilômetro percorrido.</p>
+                </div>
+                <div class="engine-list">
+                  <p id="desc">
+                    Desenvolvido sob uma plataforma mundial, o motor diesel, com
+                    torque de 50,9 kgf.m (transmissão automática), tem uma melhor
+                    aceleração e engate mais rápido entre as trocas, o que reduz o consumo
+                    em 4% em comparação com a geração anterior.
+                  </p>
+                </div>
+             </div>
+            </div>
+          </div>
+          <!-- Segurança -->
+          <div class="banner-security">
+            <div class="security-dinamic">
+              <div class="security-vertical">
+                <p id="vertical">Conforto e Segurança</p>
+              </div>
+            </div>
+            <div class="security-dinamic">
+              <div class="security-inner">
+                <div class="security-list">
+                  <p id="slogan">O máximo de conforto e segurança em cada viagem.</p>
+                </div>
+                <div class="security-list">
+                  <p id="desc">
+                    A Hilux une conforto, dirigibilidade e segurança em uma única picape. Com 7 airbags, freios ABS, alem de contar com o pacote de segurança Toyota Safety Sense que traz o assistente de pré-colisão, o controle adaptativo de velocidade cruzeiro e o sistema de alerta de mudança de faixa, que proporcionam tranquilidade a todos a bordo.
+                  </p>
+                </div>
+             </div>
+            </div>
+          </div>
+        <!-- Tecnologia -->
+        <div class="banner-technology">
+          <div class="technology-dinamic">
+            <div class="technology-vertical">
+              <p id="vertical">Conforto e Tecnologia</p>
+            </div>
+          </div>
+          <div class="technology-dinamic">
+            <div class="technology-inner">
+              <div class="technology-list">
+                <p id="slogan">Aproveite um interior refinado e funcional, e uma tecnologia que surpreende.</p>
+              </div>
+              <div class="technology-list">
+                <p id="desc">
+                  A Hilux possibilita uma posição de dirigir mais ergonômica, com
+            ajustes elétricos de distância, inclinação e altura.A direção hidráulica macia e fácil de conduzir traz comandos integrados de
+            telefone, áudio e vídeo. Além de tecnologias como Smart Entry,
+            Start/Stop, câmera de ré e sensores de estacionamento, garante
+            ainda mais conveniência aos ocupantes.
+                </p>
+              </div>
+           </div>
+          </div>
+        </div>
+        <!-- Design -->
+        <div class="banner-design">
+          <div class="design-dinamic">
+            <div class="design-vertical">
+              <p id="vertical">Design incoparável</p>
+            </div>
+          </div>
+          <div class="design-dinamic">
+            <div class="design-inner">
+              <div class="design-list">
+                <p id="slogan">Estilo que inspira, desempenho que emociona.</p>
+              </div>
+              <div class="design-list">
+                <p id="desc">
+                  Design com o conceito Wide Tread, com molduras das caixas de roda exclusivas na cor do veículo. Faróis e lanternas de LED. Roda de liga leve 18", com acabamento aprimorado. Design produzido e guiado pela paixão pelo detalhe.
+                </p>
+              </div>
+           </div>
+          </div>
+        </div>
+        <!-- Design externo e interno -->
+        <div class="block-design">
+          <div class="list-design-inner">
+            <div class="dinamic-design-inner-list">
+              <img src="../img/hilux_externo.jpg" alt="Hilux: Design externo">
+            </div>
+            <div class="dinamic-design-inner-list">
+              <p id="title">Design Externo</p>
+              <p id="desc">A combinação perfeita entre design e robustez, tanto para o
+                campo quanto para a cidade, você só encontra na Hilux.</p>
+            </div>
+          </div> 
+          <div class="list-design-inner">
+            <div class="dinamic-design-inner-list second">
+              <img src="../img/hilux_interno.png" alt="Hilux: Design interno">
+            </div>
+            <div class="dinamic-design-inner-list first">
+              <p id="title">Design Interno</p>
+              <p id="desc">O interior da Hilux conta com todas as ferramentas necessárias
+                para fazer mais e aproveitar qualquer terreno pelo caminho.</p>
+            </div>
+          </div> 
+        </div> 
+      </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+      <nav class="footer-header">
+      </nav>
+      <nav class="footer-title">
+        <h3 id="title">Toyota</h3>
+      </nav>
+      <nav class="nav-footer">
+        <section class="footer-inner">
+          <h3 id="anchor-about">Atendimento ao cliente</h3>
+          <div class="line"></div>
+          <p>Garantia Toyota</p>
+          <p>Revisão Periódica</p>
+          <p>Recall Toyota</p>
+          <p>Sac Toyota</p>
+        </section>
+        <section class="footer-inner">
+          <h3 id="anchor-contact">Compre um Toyota</h3>
+          <div class="line"></div>
+          <p>Consórcio</p>
+          <p>Vendas Diretas</p>
+          <p>Aluguel</p>
+          <p>Ofertas</p>
+        </section>
+        <section class="footer-inner">
+          <h3 id="anchor-contact">Estamos com você</h3>
+          <div class="line"></div>
+          <p>Toyota Brasil</p>
+          <p>Global site</p>
+          <p>Fale Conosco</p>
+          <p>Trabalhe Consco</p>
+        </section>
+        <section class="footer-inner network">
+          <h3 class="network">Redes Sociais</h3>
+          <div class="line"></div>
+          <ul>
+            <li>
+                <i class="fab fa-facebook"></i>
+                <p>Facebook</p>
+            </li>
+            <li>
+                <i class="fab fa-instagram"></i>
+                <p>Instagram</p>
+            </li>
+            <li>
+                <i class="fab fa-youtube"></i>
+                <p>Youtube</p>
+            </li>
+            <li>
+                <i class="fab fa-whatsapp"></i>
+                <p>Whatsapp</p>
+            </li>
+        </ul>
+        </section>
+      </nav>
+      <nav class="ribbon">
+        <section class="footer-ribbon">
+          <div class="ribbon-inner">
+            <p>Termos de uso</p>
+          </div>
+          <div class="ribbon-inner">
+            <p>Compliance</p>
+          </div>
+          <div class="ribbon-inner">
+            <p>Política de Privacidade</p>
+          </div>
+          <div class="ribbon-inner">
+            <p>Cookies</p>
+          </div>
+          <div class="ribbon-inner">
+            <p>LGPD: Proteção de Dados</p>
+          </div>
+        </section>
+        <section class="footer-copy">
+          <div class="copyright-inner">
+            <p>&copy; 2024 - Site criado por Michely Madureira</p>
+          </div>
+        </section>
+      </nav>
+    </footer>
+  </body>
+</html>

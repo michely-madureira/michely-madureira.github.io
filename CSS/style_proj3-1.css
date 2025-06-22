@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* NavBar */
+.header-bar {
+    background-color: #f4f4f4;  
+}
+
+.header-bar .nav-bar {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header-bar .nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header-bar .nav-bar a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #16234b;
+    cursor: pointer;
+}
+
+.header-bar .nav-bar a:hover {
+    color: #000;
+    border-bottom: 3px solid #333;
+}
+
+.header-bar .nav-bar #logo a img {
+    height: 115px;
+}
+
+/* Main */
+.container {
+    margin: 3rem 0;
+    background-color: #fff;
+}
+
+.post-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.post .header-post {
+    margin-bottom: 2rem;
+}
+
+.post .header-post #title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.post .header-post #desc {
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: justify;
+}
+
+.post p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.post .subtitle {
+    font-size: 1.8rem;
+    margin: 1.5rem;
+}
+
+figure {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+figure .image-box img {
+    display: block;
+    margin: 2rem auto 1rem;
+    width: 1000px;
+    height: 600px;
+}
+
+/* Efeito de carregamento com blur e fundo cinza */
+img.loading {
+    filter: blur(15px);
+    opacity: 0.6;
+    transition: filter 0.4s ease, opacity 0.4s ease;
+    background: #f0f0f0;
+}
+
+img {
+    opacity: 1;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.box-footer img {
+    height: 100px;
+    margin-bottom: 2rem;
+}
+
+.box-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: #16234b;
+}
+
+.footer-section .line {
+    border-bottom: 2px solid #16234b;
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #16234b;
+    cursor: pointer;
+}
+
+.footer-section.network {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section.network ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-section.network a {
+    display: flex;
+    text-decoration: none;
+    color: #16234b;
+}
+
+.footer-section.network p {
+    margin-left: 0.8rem;
+}
+
+.footer-section.network .fab {
+    font-size: 25px;
+}
+
+.ribbon {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.footer-ribbon {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 1.5rem 0;
+}
+
+.ribbon-inner {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.copyright-inner {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+/* Responsive */
+/* Laptop: até 1024px */
+@media (max-width: 1024px) {
+    .header-bar {
+        padding: 0 1.5rem;
+    }
+
+    .header-bar .nav-bar a {
+        font-size: 1.4rem;
+    }
+
+    .header-bar .nav-bar #logo a img {
+        height: 110px;
+    }
+
+    .post {
+        padding: 0 2rem;
+    }
+
+    /* Corrigido para usar classe .image-box */
+    figure .image-box img {
+        width: 900px;
+        height: 540px;
+    }
+
+    .footer-ribbon {
+        gap: 1rem;
+    }
+}
+
+/* Tablet: até 768px */
+@media (max-width: 768px) {
+    .header-bar .nav-bar a {
+        font-size: 1.2rem;
+    }
+
+    .header-bar .nav-bar #logo a img {
+        height: 100px;
+    }
+
+    .post {
+        padding: 0 2rem;
+    }
+
+    .post .header-post #title {
+        font-size: 2rem;
+    }
+    
+    .post .header-post #desc {
+        font-size: 1.4rem;
+    }
+    
+    .post p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .post .subtitle {
+        font-size: 1.4rem;
+    }
+
+    .box-footer img {
+        height: 80px;
+        margin-bottom: 2rem;
+    }
+
+    figure .image-box img {
+        width: 700px;
+        height: 420px;
+    }
+
+    figure figcaption {
+        font-size: 1.1rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .footer-section .line {
+        width: 70px;
+    }
+    
+    .footer-section p {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .footer-section.network .fab {
+        font-size: 20px;
+    }
+
+    .footer-ribbon {
+        gap: 1rem;
+    }
+}
+
+/* Mobile: até 480px */
+@media (max-width: 480px) {
+    .header-bar .nav-bar a {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        margin: 1.8rem;
+    }
+
+    .header-bar .nav-bar #logo a img {
+        height: 85px;
+    }
+
+    .post .header-post #title {
+        font-size: 1.5rem;
+    }
+    
+    .post .header-post #desc {
+        font-size: 1rem;
+    }
+    
+    .post p {
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .post .subtitle {
+        font-size: 1.2rem;
+    }
+
+    figure .image-box img {
+        width: 350px;
+        height: 210px;
+    }
+
+    figure figcaption {
+        font-size: 0.9rem;
+    }
+
+    .box-footer img {
+        height: 60px;
+        margin-bottom: 1.8rem;
+    }
+
+    .block-container {
+        padding: 1.5rem 0;
+    }
+
+    .footer-section h3 {
+        font-size: 0.9rem;
+    }
+    
+    .footer-section .line {
+        width: 50px;
+    }
+    
+    .footer-section p {
+        font-size: 0.7rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-section.network .fab {
+        font-size: 16px;
+    }
+
+    .footer-ribbon {
+        gap: 0.5rem;
+    }
+
+    .ribbon-inner p {
+        font-size: 0.7rem;
+    }
+
+    .copyright-inner {
+        font-size: 0.7rem;
+    }
+}
